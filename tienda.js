@@ -20,7 +20,7 @@ let listaNombres = listaProductos.map((prod) => prod.nombre)
 
 
 let catalogo = document.getElementById("catalogo")
-
+// quiero crear un catalogo de productos con ofertas especiales que serian agregados a la lista con los botones
 
 function render(lista) {
     
@@ -38,15 +38,10 @@ function render(lista) {
             <div class="card-body">
               <h5 class="card-title">${prod.nombre}</h5>
               <p class="card-text">S/.${prod.precio}</p>
-                <a href="https://www.udemy.com/course/curso-de-ingles-metodologia-vivencial/?referralCode=30EF97C87848E5C61938 " target="_blank" class="btn btn-dark">Join Now!</a>
+                <a href="# " target="_blank" class="btn btn-dark">Agregar a lista</a>
             </div>
           </div>
           
-          
-          
-         
-       
-       
 
     
         `
@@ -56,6 +51,7 @@ function render(lista) {
 }
 render(listaProductos)
 
+//las categorias por ahora son abarrote/bebida /salud
 let categoriaElegida = ''
 
 let categoria = document.getElementById("categoria")
@@ -83,7 +79,7 @@ botonTodos.addEventListener("click", ()=>{render(listaProductos)})
 
 
 
-//Agregar una tarea nueva
+//Creando mi lista de compras
 
 let addButton = document.getElementById("add-button")
 
